@@ -1,0 +1,224 @@
+body{
+    background-color: rgba(209, 195, 114, 0.76);
+    padding:60px;
+}
+.container{
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 0 150px 150px 0;
+    max-width: 1200px;
+    min-height: 45vh;
+    background-color: rgba(119, 212, 235, 0.74);
+    position: relative;
+    overflow: hidden;
+}
+.boat{
+    height: 20vh;
+    left:50px;
+    top:26vh;
+    z-index: 9997;
+    animation-name: myAnimationseaBoat;
+    animation-duration: 9000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.border>img{
+    position: absolute;
+   }
+
+.border>img:first-child{
+    /* transform: translateX(50px); */
+    
+    left: 575px;
+    top: 25vh;
+    z-index: 9999;
+    height: 46vh;
+
+    animation-name: myAnimationsea1;
+    animation-duration: 7000ms;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+}
+.border>img:nth-child(2){
+    /* transform: translateX(50px); */
+    left: 0;
+    top: 25vh;
+    z-index: 9999;
+    height: 46vh;
+    
+    animation-name: myAnimationsea1;
+    animation-duration: 7000ms;
+    animation-delay: 900ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.border>img:nth-child(3){
+    /* transform: translateX(50px); */
+    left:575px;
+    top:10vh;
+    z-index: 9997;
+    height: 46vh;
+    animation-name: myAnimationsea2;
+    animation-duration: 7000ms;
+    animation-delay: 850ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.border>img:nth-child(4){
+    /* transform: translateX(50px); */
+    left: 0;
+    top: 10vh;  
+    z-index: 9997;
+    height: 46vh;
+    animation-name: myAnimationsea2;
+    animation-duration: 7000ms;
+    animation-delay: 1100ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.border>img:nth-child(5){
+    /* transform: translateX(50px); */
+    left:575px;
+    top:20vh;
+    z-index: 9997;
+    height: 46vh;
+
+    animation-name: myAnimationsea3;
+    animation-duration: 7000ms;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.border>img:nth-child(6){
+    /* transform: translateX(50px); */
+    left: 0;
+    top: 20vh;  
+    z-index: 9997;
+    height: 46vh;
+    animation-name: myAnimationsea3;
+    animation-duration: 7000ms;
+    animation-delay: 950ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.border>img:last-child{
+    
+    left: 1600px;
+    bottom: 13vh;
+    z-index: 9998;
+    animation-name: myAnimationWave;
+    animation-duration: 9000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    opacity: 0;
+
+}
+
+
+@keyframes myAnimationWave {
+    10% 100%{
+        /* transform:scale(0); */
+        opacity: 0;
+        left: 1400px;
+          
+    }
+
+    15%{
+        opacity: 1;
+        left: 1350px;
+    }
+
+    65%{
+        left: -750px;
+        opacity: 1;
+    }
+    75%{
+        left: -750px;
+        opacity: 0;
+    } 
+    80% 90%{
+        opacity: 0;
+        left: -740px;
+    }
+}
+
+
+@keyframes myAnimationsea1 {
+  10%{
+    top: 25vh;
+  }
+  30%{
+    top: 29vh;
+  }
+  50%{
+    top: 27vh;
+  }
+  70%{
+    top: 30vh; 
+  }
+  90%{
+    top: 28vh;
+  }
+
+}
+
+@keyframes myAnimationsea2 {
+    10%{
+        top:11vh;
+      }
+      30%{
+        top:13vh;
+      }
+      50%{
+        top:10vh;
+      }
+      70%{
+        top:16vh; 
+      }
+      90%{
+        top:6vh;
+      } 
+}
+@keyframes myAnimationsea3 {
+    15%{ transform: translateX(50px);
+        top: 25vh; 
+      }
+      39%{
+        top:22vh;
+      }
+      57%{
+        transform: translateX(10px);
+        top:23vh;
+      }
+      77%{
+        top:20vh; 
+      }
+      95%{
+        transform: translateX(-15px);
+        top:24vh;
+      } 
+}
+
+
+@keyframes  myAnimationseaBoat{
+    10%{
+        transform: rotate(30deg);
+    }
+      
+    25%{
+        transform: rotate(-10deg);
+    }
+
+    35%{
+        transform: rotate(10deg);
+        left:51px;
+    }
+    59%{
+        left:-150px;
+    }
+}
